@@ -1,4 +1,6 @@
 package studios.areaofacircle;
+import com.areaofacircle.Circle;
+
 import java.util.Scanner;
 
 public class Area {
@@ -6,7 +8,8 @@ public class Area {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the radius of a circle: ");
         Double radius = input.nextDouble();
-        Double area =  3.14 * radius * radius;
+        //Double area =  3.14 * radius * radius;
+        Double area = Circle.getArea(radius);
         System.out.println("Area of the circle = " + area);
     }
 }
